@@ -1,30 +1,95 @@
-# GuideCreator
+# RXP Guide Creator
 
-## Overview
+Fork of [GuideCreator](https://github.com/Zarant/GuideCreator) modified to fully support RestedXP (RXP) guide syntax and features.
 
-This is an addon for classic WoW and classic TBC that assists in the creation of in-game leveling guides by auto generating a Guidelime text string every time you accept, turn in or complete quest objectives.
+## Purpose
+This fork aims to extend GuideCreator to support all RXP-specific guide features, formatting, and validation to allow creation of fully compatible RXP guides in-game.
 
-## Limitations
+## Planned Additions
 
-You need an english client for it to work, this addon relies on parsing text data to detect quest activity.
+### 1. Header Tags Support
+- Full RXP metadata validation
+  - `#version X` - Guide version control
+  - `#group Name` - Guide grouping 
+  - `#xprate <rate/>rate` - XP rate requirements
+  - `#classic/#retail/#som` - Game version tags
+  - `#hardcore/#softcore` - Hardcore mode tags
+  - `#phase1-4` - Phase requirements
+  - `#season 0/1/2` - Season support (None/SoM/SoD)
+  - `#fresh/#veteran` - Realm type tags
 
-## Install
+### 2. Step Control Extensions
+- Enhanced step logic
+  - `#sticky` - Persistent steps
+  - `#label Name` - Step labeling
+  - `#requires Label` - Step dependencies
+  - `#completewith next/Label` - Dynamic completion
+  - Improved step linking and referencing
 
-Download the .zip, locate your World of Warcraft folder and extract it in `_classic_beta_\Interface\AddOns` folder. Rename the `GuideCreator-classic-tbc` folder to `GuideCreator`.
+### 3. RXP Command Support
+Basic Commands:
+- `.goto Zone,X,Y` - Enhanced waypoint system
+- `.zone ZoneName` - Zone transitions
+- `.fp/.fly Location` - Flight path handling
+- `.hs/.home` - Hearthstone management
+- `.accept/.turnin/.complete` - Quest handling
 
-## Commands
+Advanced Commands:  
+- `.train spellID` - Spell training
+- `.skill Name,Level` - Skill requirements
+- `.money <amount` - Gold checks
+- `.reputation faction,standing` - Rep requirements
+- `.collect itemID,amount` - Item collection
+- `.use/.destroy itemID` - Item management
+- `.bankwithdraw/.bankdeposit` - Bank operations
+- `.unitscan` - Enemy scanning
+- `.tame npcID` - Pet taming
+- `.vehicle id` - Vehicle handling
 
-`/guide editor` Opens the text editor where you can edit each indivdual step or copy the text generated so you can move it over to a proper text editor, you can use alt+click to resize the window
+### 4. Enhanced Conditions
+- Expanded class/race conditions
+  - `<< Class/Race` - Requirements
+  - `<< !Class` - Exclusions
+  - Multiple class support
+- Quest state conditions
+  - `.isQuestComplete`
+  - `.isQuestTurnedIn`
+  - `.isQuestAvailable`
+  - `.isOnQuest`
 
-`/guide delete GuideName` Delete the specified guide, erasing its contents from memory
+### 5. RXP Formatting
+- Color codes support
+  - `|cRXP_WARN_|r` - Warning text
+  - `|cRXP_FRIENDLY_|r` - NPC text
+  - `|cRXP_ENEMY_|r` - Enemy text
+  - `|cRXP_LOOT_|r` - Loot text
+- Icon integration
+  - `|T texture:0|t` - Texture icons
+  - Quest/item icons
+  - Directional arrows
 
-`/guide list` Lists all guides saved in memory
+### 6. Validation Framework
+- Real-time syntax checking
+- RXP compatibility verification
+- Error highlighting
+- Syntax suggestions
+- Auto-completion
 
-`/guide npcnames` Show NPC names upon accepting or turning in a quest
+## Development Status
+- [ ] Header Tags Implementation
+- [ ] Step Control System
+- [ ] Basic Commands
+- [ ] Advanced Commands  
+- [ ] Condition System
+- [ ] Formatting Support
+- [ ] Validation Framework
+- [ ] Testing & Documentation
 
-`/guide goto` Generate a goto step at your current location
+## Installation
+[Installation instructions will be added]
 
-`/guide mapcoords n` Set n to -1 to disable map coordinates generation and use Guidelime's database instead, set it to 0 to only generate map coordinates upon quest accept/turn in or set it to 1 enable waypoint generation upon completing quest objectives
+## Usage
+[Usage instructions will be added]
 
-`/guide current GuideName` Sets the current working guide
-
+## Contributing
+[Contribution guidelines will be added]
