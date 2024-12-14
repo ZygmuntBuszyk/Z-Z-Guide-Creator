@@ -93,3 +93,6 @@ Advanced Commands:
 
 ## Contributing
 [Contribution guidelines will be added]
+
+## Tests
+[Contribution guidelines will be added]
