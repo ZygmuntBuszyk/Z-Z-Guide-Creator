@@ -6,7 +6,6 @@ Fork of [GuideCreator](https://github.com/Zarant/GuideCreator) modified to fully
 This fork aims to extend GuideCreator to support all RXP-specific guide features, formatting, and validation to allow creation of fully compatible RXP guides in-game.
 
 ## Planned Additions
-
 ### 1. Header Tags Support
 - Full RXP metadata validation
   - `#version X` - Guide version control
