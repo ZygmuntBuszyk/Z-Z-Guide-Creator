@@ -96,7 +96,7 @@ Advanced Commands:
 
 ## Potential structure 14.12
 Z-Z-Guide-Creator/
-├── GuideCreator-*.toc files
+├── GuideCreator-*.toc
 ├── GuideCreator.lua
 ├── RXP/
 │   ├── RXPCore.lua        # Main RXP integration
