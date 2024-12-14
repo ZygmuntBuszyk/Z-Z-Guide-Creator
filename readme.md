@@ -93,15 +93,3 @@ Advanced Commands:
 
 ## Contributing
 [Contribution guidelines will be added]
-
-## Potential structure 14.12
-Z-Z-Guide-Creator/
-├── GuideCreator-*.toc
-├── GuideCreator.lua
-├── RXP/
-│   ├── RXPCore.lua        # Main RXP integration
-│   ├── RXPValidation.lua  # Validation logic
-│   ├── RXPCommands.lua    # Command handlers
-│   ├── RXPFormatting.lua  # Text formatting
-│   └── RXPInterface.lua   # UI components
-└── fonts/
