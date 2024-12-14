@@ -93,6 +93,11 @@ local function GC_init()
         GC_GuideList = {}
     end
     
+    --  RXP extention init 
+    if addon.RXP then
+        addon.RXP.Init()
+    end
+
     StaticPopup_Show("GC_CurrentGuide")
 end
 

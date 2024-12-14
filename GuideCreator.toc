@@ -6,3 +6,8 @@
 ## SavedVariables: GC_GuideList, GC_Settings
 
 GuideCreator.lua
+RXP\RXPCore.lua
+RXP\RXPValidation.lua
+RXP\RXPCommands.lua 
+RXP\RXPFormatting.lua
+RXP\RXPInterface.lua
